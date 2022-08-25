@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pt-br">
+	<head>
+		<title>Tests Results</title>
+		<meta charset="utf-8">
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />	
+        	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        	<script src="ajax.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><!-- Compiled and minified CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" rel="stylesheet" />
+ </head>
+ <body style="height: auto;margin: 4px; background-image: url('../images/ericsson_logo_bg.png') !important; background-position: 50% 80%; background-size: 290px 385px;
+	background-attachment: fixed; background-repeat: no-repeat; width: 100%;">
+ 	
+ 	<table cellpadding="2" cellspacing="2" style="text-align: left; background-color: rgb(255, 255, 255); width: 100%;">
+			<tbody>
+				<tr>
+					<th style="text-align: center;">
+							<img style="max-height: 80px;" src="../images/login-title.png">
+					</th>
+				</tr>	
+				<tr>	
+					<th style="text-align: center">
+							<b><font size="20">Tests Results:</font></b>
+					</th>
+				</tr>
+			</tbody>
+		</table>
+		<div id="table1" style="height:50%; width: 100%; float:left;">
+		<p>
+		<font size="5" style="margin-left: 10%;">NIGHTLY BUILD</font>
+		<font size="5" style="margin-left: 60%;" >RELEASE</font>
+		</p>
+		<p>
+		<font size="3" style="margin-left: 0%;">TODAY</font>
+		<font size="3" style="margin-left: 57%;" >CURRENT RELEASE</font>
+		</p>
+		<table style="width:40%" align="left" border="1">
+			<thead>
+		        <tr>
+		            <th style="text-align: center;">id</th>
+					<th style="text-align: center;">User</th>
+		            <th style="text-align: center;">Test Name</th>
+					<th style="text-align: center;">Release</th>
+		            <th style="text-align: center;">Status</th>
+					<th style="text-align: center;">Execution Date</th>
+		        </tr>
+		    </thead>
+		    <tbody id="tabela_next">
+		    </tbody>
+		</table>
+		<table style="width:40%" align="right" border="1">
+			<thead>
+		        <tr>
+		            <th style="text-align: center;">id</th>
+					<th style="text-align: center;">User</th>
+		            <th style="text-align: center;">Test Name</th>
+					<th style="text-align: center;">Release</th>
+		            <th style="text-align: center;">Status</th>
+					<th style="text-align: center;">Execution Date</th>
+		        </tr>
+		    </thead>
+		    <tbody id="release_next">
+		    </tbody>
+		</table>
+		</div>
+		<div id="table2" style="height:50%; width: 100%; float:left;">
+		<p>
+		<font size="3" style="margin-left: 0%;">YESTERDAY</font>
+		<font size="3" style="margin-left: 55.5%;">LAST RELEASE</font>
+		</p>
+		<table style="width:40%" align="left" border="1">
+			<thead>
+		        <tr>
+		            <th style="text-align: center;">id</th>
+					<th style="text-align: center;">User</th>
+		            <th style="text-align: center;">Test Name</th>
+					<th style="text-align: center;">Release</th>
+		            <th style="text-align: center;">Status</th>
+					<th style="text-align: center;">Execution Date</th>
+		        </tr>
+		    </thead>
+		    <tbody id="tabela_last">
+		    </tbody>
+		</table>
+		<table style="width:40%" align="right" border="1">
+			<thead>
+		        <tr>
+		            <th style="text-align: center;">id</th>
+					<th style="text-align: center;">User</th>
+		            <th style="text-align: center;">Test Name</th>
+					<th style="text-align: center;">Release</th>
+		            <th style="text-align: center;">Status</th>
+					<th style="text-align: center;">Execution Date</th>
+		        </tr>
+		    </thead>
+		    <tbody id="release_last">
+		    </tbody>
+		</table>
+	   </div>
+	</body>
+</html>		

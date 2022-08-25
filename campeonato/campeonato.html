@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pt-br">
+	<head>
+		<title>Campeonato Brasileiro 2016</title>
+		<meta charset="utf-8">
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="campeonato.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><!-- Compiled and minified CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" rel="stylesheet" />
+    </head>
+ <body style="height: auto;margin: 4px; background-image: url('cbf.jpeg') !important; background-position: 50% 80%; background-size: 290px 385px;
+	background-attachment: fixed; background-repeat: no-repeat; width: 100%;">
+ 	
+ 	<table cellpadding="2" cellspacing="2" style="text-align: left; background-color: rgb(255, 255, 255); width: 100%;">
+			<tbody>
+				<tr>
+					<th style="text-align: center;">
+							<img style="max-height: 80px;" src="title.png">
+					</th>
+				</tr>	
+				<tr>	
+					<th style="text-align: center">
+							<b><font size="20">Campeonato Brasileiro 2016</font></b>
+					</th>
+				</tr>
+			</tbody>
+		</table>
+		<div id="table1" style="height:50%; width: 100%; float:left;">
+		<p>
+		<font size="3" style="margin-left: 20%;">TABELA</font>
+		<font size="3" style="margin-left: 53%;" >CALENDARIO</font>
+		</p>
+		<table style="width:40%" align="left" border="1">
+			<thead>
+		        <tr>
+					<th style="text-align: center;">Time</th>
+		            <th style="text-align: center;">P</th>
+					<th style="text-align: center;">J</th>
+					<th style="text-align: center;">V</th>
+					<th style="text-align: center;">E</th>
+					<th style="text-align: center;">D</th>
+					<th style="text-align: center;">GP</th>
+					<th style="text-align: center;">GC</th>
+					<th style="text-align: center;">SG</th>
+					<th style="text-align: center;">%</th>
+		        </tr>
+		    </thead>
+		    <tbody id="campeonato">
+		    </tbody>
+		</table>
+			<table style="width:40%" align="right" border="1">
+			<thead>
+		        <tr>
+					<th style="text-align: center;">Mandante</th>
+					<th style="text-align: center;">Resultado</th>
+		            <th style="text-align: center;">Visitante</th>
+					<th style="text-align: center;">Data</th>
+					<th style="text-align: center;">Local</th>
+					<th style="text-align: center;">Fase</th>
+		        </tr>
+		    </thead>
+		    <tbody id="calendario">
+		    </tbody>
+		</table>
+		</div>
+		<div>
+		<input style="width:10%; text-align: center; margin-left: 53%;" type="text" id="rodada" placeholder="Rodada" value="0">
+		<button onclick="getRodada()" style="text-align: center; margin-left: 53%;" type="button">Enviar</button>
+		</div>
+	</body>
+</html>		
